@@ -1,0 +1,656 @@
+/* #media{
+    display:flex;
+    justify-content: space-evenly;
+}
+.card{
+    width:350px;
+    border:4px solid black;
+    padding: 10px;
+    margin: 10px;
+    transition: 0.6s;
+}
+#dog{
+    width:100%;
+    border-radius: 10px;
+}
+img{
+    width: 350px;
+    border-radius: 10px;
+}
+.card:hover{
+box-shadow: 2px 3px 8px grey;
+border-radius: 10px;
+}
+#cat{
+    width:100%;
+    border-radius: 10px;
+}
+#cats{
+    width: 350px;
+    height:233px;
+    border-radius:10px;
+}
+@media (max-width:412px){
+
+} */
+
+*{
+    padding: 0px;
+    margin: 0px;
+    overflow:hidden;
+    font-family: "Montserrat", serif;
+}
+/* .nav{
+    width: 100%;
+    height: 70px;
+    background-color: blueviolet;
+} */
+.nav-bar{
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+#spotifyimg{
+    width:2.5rem;
+    border-radius: 2rem;
+    margin-left: 1.5rem;
+}
+.home{
+    border: 2px solid black;
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+    align-items: center;
+    width:600px;
+    height: 60px;
+    margin-left: 1rem;
+}
+ .search-bar #search{    
+    width: 28rem;
+    height: 50px;
+    margin-left: 0.75rem;
+    border: none;
+    border-right: lpx solid white solid white;
+    background-color: rgb(20, 19, 19);
+    color: white;
+    opacity:1;
+    font-weight: 700;
+}
+.search-bar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(20, 19, 19);
+    border-radius: 1rem;
+}
+.search-bar:hover{
+    border: 1px solid white;
+}
+.home .fa-solid{
+    font-size: 1.5rem;
+    color:white;
+    transition: 0.6s;
+    background-color: rgb(20, 19, 19);
+}
+.fa-solid:hover{
+    font-size: 0.9rem;
+}
+.search-bar .fa-brands{
+    font-size: 1.5rem;
+    margin-right: 8px;
+    padding-left: 5px;
+    color:white;
+    opacity: 0.7;
+}
+.fa-brands:hover{
+    opacity: 1;
+}
+.home .fa-house{
+    background-color: rgb(58, 67, 64);
+    width: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius:50%;
+    width:3rem;
+    height: 3rem;
+}
+.fa-magnifying-glass{
+    padding-left: 0.60rem;
+}
+.login-btns{
+    width: 12rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.login{
+width: 6rem;
+height: 3rem;
+border: none;
+font-weight: 700;
+background-color: white;
+opacity: 1;
+border-radius:2rem;
+opacity: 1;
+}
+.login:hover{
+    opacity:0.8 ;
+}
+.signit{
+    color: rgb(255, 255, 255);
+    background-color: black;
+    border:none;
+    margin-right: 1rem;
+    font-weight: 700;
+    opacity: 0.8;
+    transition: 0.6s;
+}
+.signit:hover{
+    opacity:1;
+    font-size:0.9rem;
+    font-weight: 700;
+}
+
+
+.sidebar{
+    width:300px;
+    height: 77vh;
+    /* overflow: hidden; */
+    margin:0.3rem 0.3rem 0.3rem 0.3rem;
+    border-radius: 0.7rem;
+    font-weight: 700; 
+    background-color:rgba(30, 32, 31, 1) ;
+    color: white;
+    /* overflow: scroll; */
+}
+
+.sidebar .library{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 0.7rem;
+
+}
+.para:hover{
+    color: white;
+}
+.fa-plus{
+    margin-right: 0.5rem;
+}
+.library .yourlibra{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 1.4rem;
+    font-weight: 900;
+    opacity: 0.8;
+}
+.library .yourlibra .para{
+    margin-left: 0.8rem;
+    font-weight: 800;
+}
+.playlist{
+    background-color:rgba(50, 57, 54, 0.7) ;
+    opacity: 1;
+    margin:0.6rem 1rem 0rem 1rem;
+    height: 6rem;
+    border-radius: 1rem;
+    font-weight: 700;
+    line-height: 1.7rem;
+    padding: 0.7rem;
+    overflow: auto;
+}
+ .playlist .play-para{
+    font-size: 0.8rem;
+    font-weight: 250;
+    /* font-size: 0,4rem; */
+}
+#playlist-btn{
+    border: none;
+    border-radius: 1.2rem;
+    height: 2.2rem;
+    margin-top: 0.8rem;
+    font-weight: 700;
+background-color: white ;
+}
+#playlist-btn:hover{
+    opacity: 0.8;
+}
+.playlistno-2{
+    line-height: 1.5rem;
+    height: 9rem;
+    background-color:rgba(50, 57, 54, 0.7) ;
+    border-radius:1rem ; 
+    margin-top: 0.7rem;
+    padding: 0.7rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+.contactus{
+    color: rgb(240, 245, 249, 0.8);
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    font-weight: 400;margin-top: 1rem;
+    line-height: 1.4rem;
+}
+span{
+    font-size: 0.8rem;
+}
+span:hover{
+text-decoration: underline;
+color: white;
+}
+.global{
+    color:white;
+    margin-top: 0.7rem;
+    margin-left: 1.5rem;
+    border: none;
+    width: 7rem;
+    height:2.5rem ;
+    border-radius:1rem ; 
+    background-color:black;
+    font-weight: 700;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid rgba(254, 254, 254,0.6);
+}
+.fa-globe{
+    font-size: 1.1rem;
+    margin-right: 3px;
+}
+.global:hover{
+    border: 1px solid white;
+}
+.greenplay{
+    width: 50px;
+    height: 50px;
+    background-color: #71897a;
+    border-radius: 50%;
+    position: relative;
+    left:65px;
+    bottom: 100px;
+    visibility: hidden;
+    transition: 0.5s;
+}
+.green-play-button{
+    width:100% ;
+    border-radius: 50%;
+}
+.artistone-div:hover{
+    .greenplay{
+        bottom: 70px;
+        visibility: visible;
+    }
+  
+
+}
+.side-content{
+    background-color: rgb(41, 44, 44);
+    width: 50%;
+    height:28.3rem;
+    flex: 3;
+
+    margin: 3px 3px 3px 2px;
+    border-radius: 20px;
+    overflow:auto;
+
+    }
+.artistone-div{
+    width: 200px;
+    height: 250px;
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+    transition: 0.6s;
+}
+.chnagefont-of-popularartist{
+    color: white;
+    margin-left: 10px;
+    margin-top: 10px;
+    text-decoration: underline;
+}
+.artistsdiv{
+    width: 100%;
+    display: flex;
+    justify-content:space-evenly;
+    align-items: center;
+}
+.artist-1{
+    width: 180px;
+    height: 180px;
+    background-image: url(pritam.jpg);
+    background-size: cover;
+    border-radius: 50%;
+
+}
+
+.artist-2{
+    width: 180px;
+    height: 180px;
+    background-image: url(anuv.jpg);
+    background-size: cover;
+    border-radius: 50%;
+}
+.artist-3{
+    width: 180px;
+    height: 180px;
+    background-image: url(atif.jpg);
+    background-size: cover;
+    border-radius: 50%;
+}
+.artist-4{
+    width: 180px;
+    height: 180px;
+    background-image: url(arijitt.jpg);
+    background-size: cover;
+    border-radius: 50%;
+}
+.artist-5{
+    width: 180px;
+    height: 180px;
+    background-image: url(shubh.webp);
+    background-size: cover;
+    border-radius: 50%;
+}
+.artist-6{
+    width: 180px;
+    height: 180px;
+    background-image: url(taylor.webp);
+    background-size: cover;
+    border-radius: 50%;
+}
+.artist-7{
+    width: 180px;
+    height: 180px;
+    background-image: url(sidhu.jpg);
+    background-size: cover;
+    border-radius: 50%;
+}
+.artist-8{
+    width: 180px;
+    height: 180px;
+    background-image: url(dhillu.jpg);
+    background-size: cover;
+    border-radius: 50%;
+}
+.artist-9{
+    width: 180px;
+    height: 180px;
+    background-image: url(yoyo.jpg);
+    background-size: cover;
+    border-radius: 50%;
+}
+.artist-10{
+    width: 180px;
+    height: 180px;
+    background-image: url(shankar.jpg);
+    background-size: cover;
+    border-radius: 50%;
+}
+.artist-11{
+    width: 180px;
+    height: 180px;
+    background-image: url(elon.webp);
+    background-size: cover;
+    border-radius: 50%;
+}
+.artist-12{
+    width: 180px;
+    height: 180px;
+    background-image: url(img-11.jpg);
+    background-size: cover;
+    border-radius: 50%;
+}
+.artist-13{
+    width: 180px;
+    height: 180px;
+    background-image: url(imno-12.jpg);
+    background-size: cover;
+    border-radius: 50%;
+}
+.artist-14{
+    width: 180px;
+    height: 180px;
+    background-image: url(guitar.jpeg);
+    background-size: cover;
+    border-radius: 50%;
+}
+.artist-15{
+    width: 180px;
+    height: 180px;
+    background-image: url(img-14.jpg);
+    background-size: cover;
+    border-radius: 50%;
+}
+.artist-16{
+    width: 180px;
+    height: 180px;
+    background-image: url(diljit.jpg);
+    background-size: cover;
+    border-radius: 50%;
+}
+.artist-17{
+    width: 180px;
+    height: 180px;
+    background-image: url(ind-girl.webp);
+    background-size: cover;
+    border-radius: 50%;
+}
+.artist-18{
+    width: 180px;
+    height: 180px;
+    background-image: url(piyari.jpeg);
+    background-size: cover;
+    border-radius: 50%;
+}
+.artist-19{
+    width: 180px;
+    height: 180px;
+    background-image: url(arijit-22.jpg);
+    background-size: cover;
+    border-radius: 50%;
+}
+.artist-20{
+    width: 180px;
+    height: 180px;
+    background-image: url(rahat-3.jpg);
+    background-size: cover;
+    border-radius: 50%;
+}
+.infoofartist{
+    display: flex;
+    flex-direction: column;
+    width: 130px;
+    margin-left: 8px;
+    color: white;
+    position: relative;
+    left: -30px;
+}
+.fontofartist{
+    font-weight: 700;
+    
+}
+.artistone-div:hover{
+    border: 2px solid white;
+    box-shadow: 2px 3px 8px 3px white;
+}
+.main-content{
+    width: 100%;
+    background-color:rgba(30, 32, 31, 1) ;
+    height: 530px;
+    display: flex;
+    justify-content: center;
+}
+.footer{
+    background-color:black;
+    color: white;
+    width: 5%;
+    height: 59px;
+    position: fixed;
+    bottom: 0px;
+    width: 100%;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+}
+.imgsongname{
+    width: 25%;
+    display: flex;
+}
+.img-div{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   height: 50px;
+   width: 50px;
+   margin-left: 10px;
+   margin-top: 5px;
+}
+.this-img{
+    background-image: url(anuv.jpg);
+    background-size: cover;
+    width: 40px;
+    height: 40px;
+}
+.intro{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: 0.5rem;
+}
+.intro .jhol{
+    font-weight: 700;
+}
+.boxof-icons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 25px;
+    width: 100px;
+    height: 60px;
+  
+}
+.heart{
+    font-size:15px ;
+    padding-right: 10px;
+}
+.img-icon{
+    margin-left:0.5rem;
+    font-size:15px ;
+}
+.arrow-1{
+    color: white;
+}
+.playarea{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.play{
+    font-size: 30px;
+}
+.allplaybtn{
+    display: flex;
+    justify-content:space-evenly;
+    align-items: center;
+    width: 240px;
+}
+.rangebtn{
+    display: flex;
+    justify-content:center;
+    width: 100%;
+    align-items: center;
+}
+.fa-solid{
+    font-weight: 900;
+    margin-top: 3px;
+}
+.timeofzeo{
+    margin-right: 5px;
+}
+.timeoflast{
+    margin-left: 5px;
+}
+.progressbar{
+    width:60% ;
+    appearance: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+ .progressbar::-webkit-slider-runnable-track{
+    background-color: #ddd;
+    border-radius: 100px;
+    height: 0.2rem;
+}
+.progressbar::-webkit-slider-thumb{
+    appearance: none;
+    height: 1rem;
+    width: 1rem;
+    background-color: #1bd760;
+    border-radius: 50%;
+    margin-top: -6px;
+    z-index: 2;
+} 
+.lastpart{
+    width: 25%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.volumecontrol{
+    display:flex;
+    justify-content:space-between;
+    align-items: center;
+    width:50% ;
+}
+.borderline-last{
+    width:100%;
+    height: 200px;
+    /* background-color: aqua; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+}
+.endofthebeautifulpara{
+color:white;
+font-weight: 800;
+margin-bottom: 10px;
+}
+.line{
+    width: 80%;
+    height: 100px;
+    /* background-color: rgb(0, 0, 0); */
+    border-top: 1px solid rgb(218, 210, 210);
+}
+ /* .volumecontrol .progressbar-two{
+    appearance: none;
+    background-color: transparent;
+    cursor: pointer;
+} */
+/* .progressbar-two::-webkit-slider-runnable-track{
+    background-color: #ddd;
+    border-radius: 100px;
+    height: 0.7rem;
+}
+.progressbar-two::-webkit-slider-thumb{
+    appearance: none;
+    height: 1rem;
+    width: 1rem;
+    background-color: #1bd760;
+    border-radius: 50%;
+    margin-top: -4px;
+    z-index: 5;
+}  */
